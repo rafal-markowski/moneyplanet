@@ -1,0 +1,10 @@
+.header {
+  height: 110px;
+  background: #ffffff;
+  opacity: 0;
+}
+@media (min-width: 576px) {
+  .header {
+    background: red;
+  }
+}

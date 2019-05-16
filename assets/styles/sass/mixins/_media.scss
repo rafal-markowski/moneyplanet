@@ -1,0 +1,19 @@
+@mixin media-up($key) {
+    @if map-has-key($breakpoints, $key) {
+        $up: map-get($breakpoints, $key);
+
+        @media (min-width: #{$up}) {
+            @content;
+        }
+    }
+}
+
+@mixin media-down($value) {
+    @if map-has-key($breakpoints, $key) {
+        $down: map-get($breakpoints, $key) - 1;
+
+        @media (max-width: #{$down}) {
+            @content;
+        }
+    }
+}
