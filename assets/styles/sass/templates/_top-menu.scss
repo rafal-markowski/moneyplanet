@@ -1,21 +1,12 @@
 .top-menu {
-    @include position($p: relative, $z: 2);
+    @include position($p: absolute, $t: 0, $r: 0, $l: 0, $z: 10);
     display: flex;
     align-items: center;
     height: 50px;
 
     @include media-up(lg) {
         height: 110px;
-    }
-
-    &::after {
-        @include media-up(lg) {
-            @include position(absolute, 0, 0, 0, 0, -1);
-            background: $white;
-            opacity: 0.25;
-        }
-
-        content: '';
+        background: $white-70;
     }
 
     &__btn {
@@ -37,34 +28,52 @@
         > span {
             flex-basis: 100%;
             height: 3px;
-            margin-bottom: 0.25rem;
             background: $white;
+            
+            &:not(:last-child) {
+                margin-bottom: 4px;
+            }
         }
     }
 
     &__wrapper {
         display: flex;
         align-items: center;
+        
+        @include media-down(lg) {
+            padding: 0 2rem;
+        }
     }
 
     &__dropdown {
         display: none;
-        margin-left: auto;
 
         @include media-up(lg) {
             display: block;
+            width: 100%;
         }
     }
 
     &__ul {
+        margin: 0;
+        padding: 0;
+
         @include media-up(lg) {
             display: flex;
+            justify-content: flex-end;
             list-style: none;
     
             > li {
-
                 &.current-menu-item {
-                    margin-right: 1rem;
+                    margin: 0 0.7812em;
+
+                    &:first-child {
+                        margin-left: none;
+                    }
+
+                    &:last-child {
+                        margin-right: none;
+                    }
 
                     a {
                         border-radius: 1rem;
@@ -74,8 +83,11 @@
                 }
 
                 > a {
-                    padding: 0.5rem 1rem;
                     display: block;
+                    padding: 0.5rem 0.7812em;
+                    text-transform: uppercase;
+                    font-size: 0.875em;
+                    font-weight: $light;
                 }
             }
         }

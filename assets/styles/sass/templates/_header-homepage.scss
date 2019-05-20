@@ -1,0 +1,90 @@
+.header-homepage {
+    padding-top: 50px;
+    margin-bottom: 65px;
+    transition: background-image 0.3s ease-out;
+    @include position($p: relative, $z: 2);
+    
+    &::after {
+        @include position(absolute, 0, 0, 0, 0, -1);
+        background: $white-70;
+        content: '';
+    }
+
+    @include media-up(lg) {
+        min-height: 670px;
+        padding-top: 110px;
+        margin-bottom: 95px;
+
+        &::after {
+            display: none;
+        }
+    }
+
+    &__left {
+        @include media-up(lg) {
+            max-width: 510px;
+        }
+    }
+
+    &__wrapper-form {
+        @include position($p: relative, $t: 65px);
+        padding: 1.5rem 1rem;
+        color: $white;
+        transition: background-color 0.3s ease-out;
+    
+        @include media-up(lg) {
+            top: 90px;
+            padding: 1.75rem 2rem;
+        }
+    }
+
+    &__h1 {
+        font-size: 1.1875em;
+        font-weight: $extra-bold;
+        text-align: center;
+
+        @include media-up(lg) {
+            @include position($p: relative, $t: 30px, $z: 2);
+            width: 100%;
+            padding: 2.125rem 0 2.125rem 2.75rem;
+            margin: 0;
+            font-size: 2.25em;
+            text-align: left;
+
+            &::after {
+                @include position(absolute, 0, 0, 0, 0, -1);
+                width: 100vw;
+                background: $white-70;
+                content: '';
+            }
+        }
+    }
+
+    &__tab {
+        @include position($p: absolute, $t: -49px, $l: 0, $r: 0, $z: 2);
+        display: flex;
+        width: 100%;
+        padding: 0 1rem;
+        font-size: 0.875em;
+
+        &-item {
+            flex: 1 1;
+            padding: 0.9rem 0;
+            text-align: center;
+            background: $purple;
+            cursor: pointer;
+
+            &:last-child {
+                margin-left: 0.5rem;
+                background: $blue;
+            }
+        }
+    }
+
+    &__item-2 {
+        @include media-up(lg) {
+            display: flex;
+            align-items: center;
+        }
+    }
+}

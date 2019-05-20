@@ -1,5 +1,12 @@
 $white: #ffffff !default;
+$white-70: rgba(255, 255, 255, 0.70) !default;
 $purple: #6968ad !default;
+$purple-2: #5a5996 !default;
+$blue: #21324c !default;
+$blue-2: #374760 !default;
+$brown: #bec3ca !default;
+$green: #2FCFEA !default;
+$green-2: #bbe7ee !default;
 
 $breakpoints: (
     sm: 576px,
@@ -7,3 +14,11 @@ $breakpoints: (
     lg: 992px,
     xl: 1200px
 ) !default;
+
+$kanit-font: 'Kanit', sans-serif;
+
+$extra-light: 200 !default;
+$light: 300 !default;
+$regular: 400 !default;
+$bold: 700 !default;
+$extra-bold: 800 !default;

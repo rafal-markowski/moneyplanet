@@ -1,13 +1,86 @@
-.bold {
-    font-weight: 700;
+body {
+    position: relative;
+
+    @include media-up(lg) {
+        overflow-x: hidden;
+    }
+
+    &.first-tab {
+        .header-homepage {
+            background: url('../images/header-homepage.png') no-repeat;
+            background-size: 100% 190px;
+            background-position-y: -30px;
+    
+            @include media-retina {
+                background-image: url('../images/header-homepage-2x.png');
+            }
+
+            @include media-up(lg) {
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+
+            &__wrapper-form {
+                background: $purple;
+            }
+        }
+
+        .form__box, .footer {
+            background: $purple-2;
+        }
+    }
+
+    &.second-tab {
+        .header-homepage {
+            background: url('../images/header-homepage2.png') no-repeat;
+            background-size: 100% 190px;
+            background-position-y: -30px;
+    
+            @include media-retina {
+                background: url('../images/header-homepage2-2x.png') no-repeat;
+                background-size: cover;
+            }
+
+            @include media-up(lg) {
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+
+            &__wrapper-form {
+                background: $blue;
+            }
+        }
+
+        .form__box, .footer {
+            background: $blue-2;
+        }
+    }
+}
+
+#wpadminbar {
+    position: fixed !important;
+}
+
+body, a {
+    font-family: $kanit-font;
+    color: $blue;
+}
+
+a {
+    &:hover {
+        text-decoration: none;
+    }
 }
 
 .logo {
     display: inline-flex;
     align-items: center;
+    font-size: 0.8125em;
     
-    &, &:hover {
-        text-decoration: none;
+    @include media-up(lg) {
+        font-size: 1.5em;
     }
     
     &::before {
@@ -25,5 +98,9 @@
             margin-right: 15px;
             background: url('../images/logo.png') no-repeat;
         }
+    }
+
+    &__span {
+        font-weight: $extra-bold;
     }
 }
