@@ -38,8 +38,7 @@ body {
             background-position-y: -30px;
     
             @include media-retina {
-                background: url('../images/header-homepage2-2x.png') no-repeat;
-                background-size: cover;
+                background-image: url('../images/header-homepage2-2x.png');
             }
 
             @include media-up(lg) {
