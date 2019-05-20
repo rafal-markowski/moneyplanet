@@ -1,0 +1,93 @@
+.must-have {
+    padding-top: 2rem;
+    margin-top: 3rem;
+    
+    @include media-up(lg) {
+        padding-top: 4.25rem;
+    }
+
+    &__h2 {
+        display: flex;
+        align-items: center;
+        font-size: 0.875em;
+        font-weight: $bold;
+    }
+
+    &__list {
+        list-style: none;
+
+        &-style {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            font-size: 1.1875em;
+            font-weight: $extra-bold;
+            border-radius: 100%;
+            color: $white;
+            background: $green;
+
+            @include media-up(lg) {
+                @include position($p: absolute, $l: -2px, $z: 2);
+                width: 35px;
+                height: 35px;
+            }
+        }
+
+        &-item {
+            padding: 0.25rem 0;
+            border-bottom: 1px solid $blue;
+            font-size: 0.925em;
+
+            @include media-up(lg) {
+                position: relative;
+                padding: 0;
+                margin: 1rem 0;
+                padding-left: 3rem;
+            }
+        }
+    }
+
+    &__border {
+        background: $white;
+
+        @include media-up(lg) {
+            position: relative;
+            width: 50%;
+            padding: 0.75rem 2.1875rem 1.625rem 2.1875rem;
+            border: 30px solid $blue;
+
+            &::after {
+                @include position($p: absolute, $t: calc(50% - 92.5px), $l: -65px, $z: 2);
+                width: 75px;
+                height: 185px;
+                background: url('../images/purple.png') no-repeat center;
+                background-size: cover;
+                content: '';
+            }
+        }
+    }
+
+    &__img {
+        @include media-up(lg) {
+            @include position($p: absolute, $r: 0, $t: -25px, $b: 25px, $z: -1);
+            width: 60%;
+            height: 100%;
+            background: url('../images/okey.png') no-repeat center;
+            background-size: cover;
+        }
+    }
+
+    &__color {
+        @include media-up(lg) {
+            @include position($p: absolute, $r: 15px, $t: -12px, $b: 12px, $z: -2);
+            width: 60%;
+            background: $purple;
+        }
+    }
+
+    &__wrapper {
+        position: relative;
+    }
+} 

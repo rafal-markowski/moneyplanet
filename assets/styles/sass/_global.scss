@@ -63,15 +63,9 @@ body {
     position: fixed !important;
 }
 
-body, a {
+body {
     font-family: $kanit-font;
     color: $blue;
-}
-
-a {
-    &:hover {
-        text-decoration: none;
-    }
 }
 
 .logo {

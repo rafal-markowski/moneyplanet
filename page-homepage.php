@@ -62,4 +62,35 @@ get_header(); ?>
             </div>
         </div>
     </header>
+    <section class="must-have">
+        <div class="must-have__wrapper container">
+            <div class="must-have__border">
+                <h2 class="must-have__h2">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/checked.png" alt=""> 
+                    <span class="mt-1 ml-2 ml-lg-4">Żeby uzyskać pożyczkę nalęży mieć</span>
+                </h2>
+                <ul class="must-have__list mt-4 pl-lg-4 pr-4">
+                    <li class="must-have__list-item">
+                        <span class="must-have__list-style mr-3 mr-lg-4">1</span>
+                        20 lat
+                    </li>
+                    <li class="must-have__list-item">
+                        <span class="must-have__list-style mr-3 mr-lg-4">2</span>
+                        Pesel
+                    </li>
+                    <li class="must-have__list-item">
+                        <span class="must-have__list-style mr-3 mr-lg-4">3</span>
+                        Telefon komórkowy
+                    </li>
+                    <li class="must-have__list-item">
+                        <span class="must-have__list-style mr-3 mr-lg-4">4</span>
+                        Stały dochód
+                    </li>
+                </ul>
+            </div>
+            <div class="must-have__img"></div>
+            <div class="must-have__color"></div>
+        </div>
+    </section>
+    assasasasa
 <?php get_footer(); ?>

@@ -58,13 +58,9 @@ body.second-tab .form__box, body.second-tab .footer {
   position: fixed !important;
 }
 
-body, a {
+body {
   font-family: "Kanit", sans-serif;
   color: #21324c;
-}
-
-a:hover {
-  text-decoration: none;
 }
 
 .logo {
@@ -99,8 +95,8 @@ a:hover {
 }
 
 .header-homepage {
-  height: 190px;
   padding-top: 50px;
+  margin-bottom: 65px;
   transition: background-image 0.3s ease-out;
   position: relative;
   z-index: 2;
@@ -119,6 +115,7 @@ a:hover {
   .header-homepage {
     min-height: 670px;
     padding-top: 110px;
+    margin-bottom: 95px;
   }
   .header-homepage::after {
     display: none;
@@ -381,4 +378,106 @@ a:hover {
   letter-spacing: 0.059em;
   background: #2FCFEA;
   color: #ffffff;
+}
+
+.must-have {
+  padding-top: 2rem;
+  margin-top: 3rem;
+}
+@media (min-width: 992px) {
+  .must-have {
+    padding-top: 4.25rem;
+  }
+}
+.must-have__h2 {
+  display: flex;
+  align-items: center;
+  font-size: 0.875em;
+  font-weight: 700;
+}
+.must-have__list {
+  list-style: none;
+}
+.must-have__list-style {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  font-size: 1.1875em;
+  font-weight: 800;
+  border-radius: 100%;
+  color: #ffffff;
+  background: #2FCFEA;
+}
+@media (min-width: 992px) {
+  .must-have__list-style {
+    position: absolute;
+    left: -2px;
+    z-index: 2;
+    width: 35px;
+    height: 35px;
+  }
+}
+.must-have__list-item {
+  padding: 0.25rem 0;
+  border-bottom: 1px solid #21324c;
+  font-size: 0.925em;
+}
+@media (min-width: 992px) {
+  .must-have__list-item {
+    position: relative;
+    padding: 0;
+    margin: 1rem 0;
+    padding-left: 3rem;
+  }
+}
+.must-have__border {
+  background: #ffffff;
+}
+@media (min-width: 992px) {
+  .must-have__border {
+    position: relative;
+    width: 50%;
+    padding: 0.75rem 2.1875rem 1.625rem 2.1875rem;
+    border: 30px solid #21324c;
+  }
+  .must-have__border::after {
+    position: absolute;
+    top: calc(50% - 92.5px);
+    left: -65px;
+    z-index: 2;
+    width: 75px;
+    height: 185px;
+    background: url("../images/purple.png") no-repeat center;
+    background-size: cover;
+    content: '';
+  }
+}
+@media (min-width: 992px) {
+  .must-have__img {
+    position: absolute;
+    top: -25px;
+    right: 0;
+    bottom: 25px;
+    z-index: -1;
+    width: 60%;
+    height: 100%;
+    background: url("../images/okey.png") no-repeat center;
+    background-size: cover;
+  }
+}
+@media (min-width: 992px) {
+  .must-have__color {
+    position: absolute;
+    top: -12px;
+    right: 15px;
+    bottom: 12px;
+    z-index: -2;
+    width: 60%;
+    background: #6968ad;
+  }
+}
+.must-have__wrapper {
+  position: relative;
 }
