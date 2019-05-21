@@ -147,4 +147,55 @@ get_header(); ?>
             </div>
         </div>
     </section>
+    <section class="inference mt-4 mt-lg-5">
+        <div class="container">
+            <h2 class="inference__h2 mb-4 mb-lg-5">Proces wnioskowania o pożyczkę</h2>
+            <div class="row no-gutters">
+                <div class="col-lg-3 col-md-6 mb-3 mb-lg-0">
+                    <article class="inference__item mr-md-2">
+                        <div>
+                            <h3 class="inference__h3 mb-4">
+                                <span class="inference__number">1.</span>
+                                Wybierz kwotę i okres pożyczki
+                            </h3>
+                            <img class="d-block mx-auto" src="<?php echo get_template_directory_uri(); ?>/assets/images/inference-1.png" alt="">
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-3 mb-lg-0">
+                    <article class="inference__item mr-lg-2">
+                        <div>
+                            <h3 class="inference__h3 mb-4">
+                                <span class="inference__number">2.</span>
+                                Wypełnij formularz online
+                            </h3>
+                            <img class="d-block mx-auto" src="<?php echo get_template_directory_uri(); ?>/assets/images/inference-2.png" alt="">
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-3 mb-md-0">
+                    <article class="inference__item mr-md-2">
+                        <div>
+                            <h3 class="inference__h3 mb-4">
+                                <span class="inference__number">3.</span>
+                                Zweryfikuj się online lub umów z kurierem
+                            </h3>
+                            <img class="d-block mx-auto" src="<?php echo get_template_directory_uri(); ?>/assets/images/inference-3.png" alt="">
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <article class="inference__item">
+                        <div>
+                            <h3 class="inference__h3 mb-4">
+                                <span class="inference__number">4.</span>
+                                Otrzymaj pieniądze na konto lub odbierz je na poczcie
+                            </h3>
+                            <img class="d-block mx-auto" src="<?php echo get_template_directory_uri(); ?>/assets/images/inference-4.png" alt="">
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
 <?php get_footer(); ?>
