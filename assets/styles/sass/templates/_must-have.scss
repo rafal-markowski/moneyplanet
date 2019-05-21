@@ -1,9 +1,8 @@
 .must-have {
-    padding-top: 2rem;
-    margin-top: 3rem;
+    padding-top: 1.5rem;
     
     @include media-up(lg) {
-        padding-top: 5.25rem;
+        padding-top: 5.625rem;
     }
 
     &__h2 {
@@ -11,6 +10,10 @@
         align-items: center;
         font-size: 0.875em;
         font-weight: $bold;
+
+        @include media-up(lg) {
+            font-size: 1em;
+        }
     }
 
     &__list {

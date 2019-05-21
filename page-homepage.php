@@ -95,59 +95,65 @@ get_header(); ?>
     <section class="references">
         <div class="container">
             <h2 class="references__h2 mb-4 mb-lg-5">Zaufało nam już ponad <span class="references__big mx-2">20000</span> Polaków</h2>
-            <div class="row">
-                <article class="col-lg-4 col-sm-6 mb-3">
-                    <div class="references__img"></div>
-                    <div class="references__content pt-5 px-3 px-lg-4 pb-1">
-                        <header class="references__header mb-2">
-                            <h3 class="references__h3 mb-0">Amelia, 23</h3>
-                            <div>
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/star.png" alt="">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/star.png" alt="">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/star.png" alt="">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/star.png" alt="">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/star.png" alt="">
-                            </div>
-                        </header>
-                        <p>Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. Pięć wieków później zaczął być używany przemyśle elektronicznym.</p>
+            <div class="row no-gutters">
+                <article class="col-lg-4 col-sm-6 mb-3 mb-lg-0">
+                    <div class="mr-sm-2 mx-lg-2">
+                        <div class="references__img"></div>
+                        <div class="references__content pt-5 px-3 px-lg-4 pb-1">
+                            <header class="references__header mb-2">
+                                <h3 class="references__h3 mb-0">Amelia, 23</h3>
+                                <div>
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/star.png" alt="">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/star.png" alt="">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/star.png" alt="">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/star.png" alt="">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/star.png" alt="">
+                                </div>
+                            </header>
+                            <p>Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. Pięć wieków później zaczął być używany przemyśle elektronicznym.</p>
+                        </div>
                     </div>
                 </article>
-                <article class="col-lg-4 col-sm-6 mb-3">
-                    <div class="references__img"></div>
-                    <div class="references__content pt-5 px-3 px-lg-4 pb-1">
-                        <header class="references__header mb-2">
-                            <h3 class="references__h3 mb-0">Amelia, 23</h3>
-                            <div>
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/star.png" alt="">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/star.png" alt="">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/star.png" alt="">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/star.png" alt="">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/star.png" alt="">
-                            </div>
-                        </header>
-                        <p>Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. Pięć wieków później zaczął być używany przemyśle elektronicznym.</p>
+                <article class="col-lg-4 col-sm-6 mb-3 mb-lg-0">
+                    <div class="mr-sm-2 mx-lg-2">
+                        <div class="references__img"></div>
+                        <div class="references__content pt-5 px-3 px-lg-4 pb-1">
+                            <header class="references__header mb-2">
+                                <h3 class="references__h3 mb-0">Amelia, 23</h3>
+                                <div>
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/star.png" alt="">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/star.png" alt="">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/star.png" alt="">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/star.png" alt="">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/star.png" alt="">
+                                </div>
+                            </header>
+                            <p>Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. Pięć wieków później zaczął być używany przemyśle elektronicznym.</p>
+                        </div>
                     </div>
                 </article>
                 <article class="col-lg-4 col-sm-6">
-                    <div class="references__img"></div>
-                    <div class="references__content pt-5 px-3 px-lg-4 pb-1">
-                        <header class="references__header mb-2">
-                            <h3 class="references__h3 mb-0">Amelia, 23</h3>
-                            <div>
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/star.png" alt="">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/star.png" alt="">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/star.png" alt="">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/star.png" alt="">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/star.png" alt="">
-                            </div>
-                        </header>
-                        <p>Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. Pięć wieków później zaczął być używany przemyśle elektronicznym.</p>
+                    <div class="mr-sm-2 mx-sm-2">
+                        <div class="references__img"></div>
+                        <div class="references__content pt-5 px-3 px-lg-4 pb-1">
+                            <header class="references__header mb-2">
+                                <h3 class="references__h3 mb-0">Amelia, 23</h3>
+                                <div>
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/star.png" alt="">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/star.png" alt="">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/star.png" alt="">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/star.png" alt="">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/star.png" alt="">
+                                </div>
+                            </header>
+                            <p>Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. Pięć wieków później zaczął być używany przemyśle elektronicznym.</p>
+                        </div>
                     </div>
                 </article>
             </div>
         </div>
     </section>
-    <section class="inference mt-4 mt-lg-5">
+    <section class="inference">
         <div class="container">
             <h2 class="inference__h2 mb-4 mb-lg-5">Proces wnioskowania o pożyczkę</h2>
             <div class="row no-gutters">

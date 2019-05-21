@@ -1,8 +1,8 @@
 .references {
-    margin-top: 1.25rem;
+    margin-top: 1.5rem;
 
     @include media-up(lg) {
-        margin-top: 4.25rem;
+        margin-top: 5.875rem;
     }
 
     &__h2 {
@@ -10,9 +10,13 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        font-size: 1.35em;
+        font-size: 1em;
         line-height: 1.75em;
         font-weight: $extra-bold;
+
+        @include media-up(lg) {
+            font-size: 1.6em;
+        }
     }
 
     &__big {

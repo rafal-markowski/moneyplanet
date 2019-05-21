@@ -1,4 +1,10 @@
 .inference {
+    margin-top: 1.6875rem;
+
+    @include media-up(lg) {
+        margin-top: 5.875rem;
+    }
+
     &__item {
         display: flex;
         align-items: center;
@@ -14,7 +20,7 @@
         text-align: center;
 
         @include media-up(lg) {
-            font-size: 1.5em;
+            font-size: 2em;
         }
     }
 

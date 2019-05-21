@@ -114,7 +114,7 @@ body {
   .header-homepage {
     min-height: 670px;
     padding-top: 110px;
-    margin-bottom: 95px;
+    margin-bottom: 85px;
   }
   .header-homepage::after {
     display: none;
@@ -380,12 +380,11 @@ body {
 }
 
 .must-have {
-  padding-top: 2rem;
-  margin-top: 3rem;
+  padding-top: 1.5rem;
 }
 @media (min-width: 992px) {
   .must-have {
-    padding-top: 5.25rem;
+    padding-top: 5.625rem;
   }
 }
 .must-have__h2 {
@@ -393,6 +392,11 @@ body {
   align-items: center;
   font-size: 0.875em;
   font-weight: 700;
+}
+@media (min-width: 992px) {
+  .must-have__h2 {
+    font-size: 1em;
+  }
 }
 .must-have__list {
   list-style: none;
@@ -488,11 +492,11 @@ body {
 }
 
 .references {
-  margin-top: 1.25rem;
+  margin-top: 1.5rem;
 }
 @media (min-width: 992px) {
   .references {
-    margin-top: 4.25rem;
+    margin-top: 5.875rem;
   }
 }
 .references__h2 {
@@ -500,9 +504,14 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  font-size: 1.35em;
+  font-size: 1em;
   line-height: 1.75em;
   font-weight: 800;
+}
+@media (min-width: 992px) {
+  .references__h2 {
+    font-size: 1.6em;
+  }
 }
 .references__big {
   font-size: 2.375em;
@@ -574,6 +583,14 @@ body {
   justify-content: space-between;
 }
 
+.inference {
+  margin-top: 1.6875rem;
+}
+@media (min-width: 992px) {
+  .inference {
+    margin-top: 5.875rem;
+  }
+}
 .inference__item {
   display: flex;
   align-items: center;
@@ -589,7 +606,7 @@ body {
 }
 @media (min-width: 992px) {
   .inference__h2 {
-    font-size: 1.5em;
+    font-size: 2em;
   }
 }
 .inference__h3 {
