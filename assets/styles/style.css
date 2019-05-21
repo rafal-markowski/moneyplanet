@@ -622,3 +622,14 @@ body {
   font-weight: 700;
   color: #2FCFEA;
 }
+
+.regulations {
+  margin-top: 2.375rem;
+  font-size: 0.6875em;
+  line-height: 1.1em;
+}
+@media (min-width: 992px) {
+  .regulations {
+    margin-top: 5.5rem;
+  }
+}

@@ -1,0 +1,9 @@
+.regulations {
+    margin-top: 2.375rem;
+    font-size: 0.6875em;
+    line-height: 1.1em;
+
+    @include media-up(lg) {
+        margin-top: 5.5rem;
+    }
+}
