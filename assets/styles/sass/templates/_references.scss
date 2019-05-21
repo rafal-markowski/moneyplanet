@@ -1,0 +1,86 @@
+.references {
+    margin-top: 1.25rem;
+
+    @include media-up(lg) {
+        margin-top: 4.25rem;
+    }
+
+    &__h2 {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.35em;
+        line-height: 1.75em;
+        font-weight: $extra-bold;
+    }
+
+    &__big {
+        font-size: 2.375em;
+        font-weight: $bold;
+        color: $green;
+    }
+
+    &__img {
+        height: 140px;
+        background: url('../images/references-mobile.png') no-repeat center;
+        background-size: 100% 140px;
+
+        @include media-retina {
+            background-image: url('../images/references-mobile.png');
+        }
+
+        @include media-up(md) {
+            height: 200px;
+            background-image: url('../images/references.png');
+            background-size: 104% 200px;
+
+            @include media-retina {
+                background-image: url('../images/references-2x.png');
+            }
+        }
+    }
+
+    &__content {
+        position: relative;
+        background: $green-3;
+
+        &::after, &::before {
+            @include position($p:absolute, $t: -15px, $z: 2);
+            width: 8px;
+            height: 50px;
+            background: $purple;
+            transform: skewY(20deg);
+            transform-origin: top center;
+            content: '';
+        }
+
+        &::after {
+            left: 16px;
+
+            @include media-up(lg) {
+                left: 8px;
+            }
+        }
+
+        &::before {
+            left: 35px;
+
+            @include media-up(lg) {
+                left: 27px;
+            }
+        }
+    }
+
+    &__h3 {
+        display: inline-block;
+        font-size: 1.125em;
+        font-weight: $bold;
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
