@@ -17,6 +17,7 @@
                 <span class="logo__span">Money</span>
                 Planet
             </a>
+            <input type="checkbox" id="checkbox-toggler">
             <div class="top-menu__dropdown">
                 <?php 
                     wp_nav_menu(array(
@@ -26,10 +27,10 @@
                     ));
                 ?>
             </div>
-            <button class="top-menu__btn">
+            <label for="checkbox-toggler" class="top-menu__btn">
                 <span></span>
                 <span></span>
                 <span></span>
-            </button>
+            </label>
         </div>
     </nav>
