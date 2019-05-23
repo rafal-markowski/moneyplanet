@@ -1,0 +1,8 @@
+@mixin hover($c: null, $bg: null, $d: none) {
+    &:hover {
+        color: $c;
+        background: $bg;
+        text-decoration: $d;
+        @content;
+    }
+}

@@ -23,7 +23,7 @@ body {
                 background-size: cover;
             }
 
-            &__wrapper-form {
+            &__wrapper-form, &__tab-item::after {
                 background: $purple;
             }
         }
@@ -31,6 +31,7 @@ body {
         .form__box, .footer {
             background: $purple-2;
         }
+
     }
 
     &.second-tab {
@@ -49,13 +50,26 @@ body {
                 background-size: cover;
             }
 
-            &__wrapper-form {
+            &__wrapper-form, &__tab-item::after {
                 background: $blue;
             }
         }
 
         .form__box, .footer {
             background: $blue-2;
+        }
+    }
+
+    @include media-up(lg) {
+        &.first-tab .top-menu li:first-child,
+        &.second-tab .top-menu li:first-child {
+            margin-right: 0.85em;
+    
+            a {
+                border-radius: 1rem;
+                background: $purple;
+                color: $white !important;
+            }
         }
     }
 }

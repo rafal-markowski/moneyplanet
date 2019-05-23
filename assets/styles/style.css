@@ -25,7 +25,7 @@ body.first-tab .header-homepage {
     background-size: cover;
   }
 }
-body.first-tab .header-homepage__wrapper-form {
+body.first-tab .header-homepage__wrapper-form, body.first-tab .header-homepage__tab-item::after {
   background: #6968ad;
 }
 body.first-tab .form__box, body.first-tab .footer {
@@ -48,11 +48,21 @@ body.second-tab .header-homepage {
     background-size: cover;
   }
 }
-body.second-tab .header-homepage__wrapper-form {
+body.second-tab .header-homepage__wrapper-form, body.second-tab .header-homepage__tab-item::after {
   background: #21324c;
 }
 body.second-tab .form__box, body.second-tab .footer {
   background: #374760;
+}
+@media (min-width: 992px) {
+  body.first-tab .top-menu li:first-child, body.second-tab .top-menu li:first-child {
+    margin-right: 0.85em;
+  }
+  body.first-tab .top-menu li:first-child a, body.second-tab .top-menu li:first-child a {
+    border-radius: 1rem;
+    background: #6968ad;
+    color: #ffffff !important;
+  }
 }
 
 #wpadminbar {
@@ -125,6 +135,16 @@ body.second-tab .form__box, body.second-tab .footer {
   position: relative;
   z-index: 2;
 }
+@media (min-width: 992px) {
+  .header-homepage {
+    min-height: 670px;
+    padding-top: 110px;
+    margin-bottom: 85px;
+  }
+  .header-homepage::after {
+    display: none;
+  }
+}
 .header-homepage::after {
   position: absolute;
   top: 0;
@@ -136,16 +156,6 @@ body.second-tab .form__box, body.second-tab .footer {
   content: '';
 }
 @media (min-width: 992px) {
-  .header-homepage {
-    min-height: 670px;
-    padding-top: 110px;
-    margin-bottom: 85px;
-  }
-  .header-homepage::after {
-    display: none;
-  }
-}
-@media (min-width: 992px) {
   .header-homepage__left {
     max-width: 510px;
   }
@@ -153,11 +163,12 @@ body.second-tab .form__box, body.second-tab .footer {
 .header-homepage__wrapper-form {
   position: relative;
   top: 65px;
+  z-index: 2;
   padding: 1.5rem 1rem;
   color: #ffffff;
   transition: background-color 0.3s ease-out;
 }
-@media (min-width: 992px) {
+@media (min-width: 576px) {
   .header-homepage__wrapper-form {
     top: 90px;
     padding: 1.75rem 2rem;
@@ -196,18 +207,33 @@ body.second-tab .form__box, body.second-tab .footer {
   top: -49px;
   right: 0;
   left: 0;
-  z-index: 2;
+  z-index: -1;
   display: flex;
   width: 100%;
   padding: 0 1rem;
-  font-size: 0.875em;
 }
 .header-homepage__tab-item {
+  position: relative;
   flex: 1 1;
-  padding: 0.9rem 0;
+  padding: 1rem 0 2rem;
   text-align: center;
   background: #6968ad;
+  color: #ffffff;
   cursor: pointer;
+}
+.header-homepage__tab-item:hover {
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+.header-homepage__tab-item:after {
+  position: absolute;
+  top: 68.5%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  transition: background-color 0.3s ease-out;
+  content: '';
 }
 .header-homepage__tab-item:last-child {
   margin-left: 0.5rem;
@@ -238,11 +264,17 @@ body.second-tab .form__box, body.second-tab .footer {
 }
 .top-menu__btn {
   position: relative;
+  display: none;
   width: 30px;
   height: 30px;
   margin: 0 0 0 auto;
   background: #6968ad;
   cursor: pointer;
+}
+@media (max-width: 991px) {
+  .top-menu__btn {
+    display: block;
+  }
 }
 .top-menu__btn span {
   position: absolute;
@@ -362,7 +394,7 @@ body.second-tab .form__box, body.second-tab .footer {
 
 .form__box {
   padding: 1.25rem;
-  transition: background-color 0.3s ease-out;
+  transition: background-image 0.3s ease-out;
 }
 .form__label {
   font-size: 1.25em;
@@ -383,41 +415,56 @@ body.second-tab .form__box, body.second-tab .footer {
   width: 100%;
   height: 7px;
   background: #ffffff;
+  animation: none;
 }
 .form__range::-webkit-slider-thumb {
   height: 15px;
   width: 30px;
   background: #2FCFEA;
   -webkit-appearance: none;
+  animation: none;
+  border-color: transparent;
+  border-radius: 0;
   margin-top: -3.5px;
 }
 .form__range::-moz-range-track {
   width: 100%;
   height: 7px;
   background: #ffffff;
+  animation: none;
 }
 .form__range::-moz-range-thumb {
   height: 15px;
   width: 30px;
   background: #2FCFEA;
   -webkit-appearance: none;
+  animation: none;
+  border-color: transparent;
+  border-radius: 0;
 }
 .form__range::-ms-track {
   width: 100%;
   height: 7px;
   background: #ffffff;
+  animation: none;
 }
 .form__range::-ms-thumb {
   height: 15px;
   width: 30px;
   background: #2FCFEA;
   -webkit-appearance: none;
+  animation: none;
+  border-color: transparent;
+  border-radius: 0;
   margin-top: -1px;
 }
 .form__value {
-  font-size: 1.25em;
+  font-size: 1.125em;
   font-weight: 700;
   color: #bbe7ee;
+}
+.form__value-2 {
+  font-size: 0.925em;
 }
 .form__range-box {
   display: flex;
@@ -437,6 +484,7 @@ body.second-tab .form__box, body.second-tab .footer {
 .form__p {
   font-size: 0.5em;
   color: #bec3ca;
+  text-align: justify;
 }
 .form__group {
   margin-bottom: 0.625rem;
@@ -454,6 +502,11 @@ body.second-tab .form__box, body.second-tab .footer {
 
 .must-have {
   padding-top: 1.5rem;
+}
+@media (min-width: 576px) {
+  .must-have {
+    padding-top: 3rem;
+  }
 }
 @media (min-width: 992px) {
   .must-have {
@@ -712,6 +765,7 @@ body.second-tab .form__box, body.second-tab .footer {
   padding: 2.5rem 1.25rem 2.5rem;
   margin-top: 5rem;
   background: #6968ad;
+  transition: background-color 0.3s ease-out;
 }
 .footer__logo {
   position: absolute;
@@ -778,6 +832,68 @@ body.second-tab .form__box, body.second-tab .footer {
   text-align: center;
 }
 .footer__submit:hover {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
+}
+
+.other-page {
+  padding-top: 50px;
+}
+@media (min-width: 992px) {
+  .other-page {
+    padding-top: 110px;
+  }
+}
+.other-page__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+  background: #6968ad;
+  color: #ffffff;
+}
+.other-page__article {
+  display: block;
+  width: 100%;
+  padding: 1.5rem;
+  border: 3px solid transparent;
+  border-radius: 10px;
+  color: #21324c;
+}
+.other-page__article:hover {
+  color: #21324c;
+  text-decoration: none;
+  border-color: #6968ad;
+}
+
+.paginate {
+  margin: 2rem 0 2rem 2rem;
+}
+
+.page-numbers {
+  display: flex;
+  padding: 0;
+  font-size: 1rem;
+  list-style: none;
+}
+.page-numbers a {
+  display: block;
+  padding: 3px 10px;
+  margin-right: 7px;
+  color: #21324c;
+}
+.page-numbers span.current {
+  display: block;
+  float: left;
+  padding: 3px 10px;
+  margin-right: 7px;
+  border-radius: 12px;
+  background-color: #6968ad;
+  color: #ffffff;
+}
+.page-numbers span.dots {
+  display: block;
+  float: left;
+  padding: 3px 10px;
+  margin-right: 7px;
 }

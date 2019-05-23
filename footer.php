@@ -14,7 +14,7 @@
     </section>
     <footer class="footer">
         <div class="footer__logo">
-            <a href="/" class="logo-big">
+            <a href="<?php echo get_site_url(); ?>" class="logo-big">
                 <span class="logo__span">Money</span>
                 Planet
             </a>
@@ -27,13 +27,14 @@
                     'menu_class' => 'footer__menu'
                 ));
             ?>
-            <a class="footer__submit form__submit" href="#">WEŹ POŻYCZKĘ</a>
+            <a class="footer__submit form__submit" href="<?php echo get_site_url(); ?>">WEŹ POŻYCZKĘ</a>
         </div>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    </footer>  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <?php if(is_front_page()): ?>
+    
+    <?php if(is_page_template('page-homepage.php') || is_page_template('page-pozyczka-ratalna.php')): ?>
+        <script src="<?php echo get_template_directory_uri();?>/assets/scripts/rangeslider.min.js"></script>
         <script src="<?php echo get_template_directory_uri();?>/assets/scripts/form-homepage.js"></script>
     <?php endif; ?>
 <?php wp_footer(); ?>

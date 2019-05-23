@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Strona główna
+Template Name: Strona główna - pożyczka ratalna
 */
 get_header(); ?>
     <header class="header-homepage">
@@ -9,10 +9,10 @@ get_header(); ?>
                 <div class="header-homepage__left col-lg-6 pr-lg-0">
                     <div class="header-homepage__wrapper-form">
                         <div class="header-homepage__tab">
-                            <a class="header-homepage__tab-item">Pożyczka</a>
-                            <a href="<?php echo get_site_url(); ?>/pozyczka-ratalna" class="header-homepage__tab-item load">Ratalna</a>
+                            <a href="<?php echo get_site_url(); ?>" class="header-homepage__tab-item load">Pożyczka</a>
+                            <a class="header-homepage__tab-item">Ratalna</a>
                         </div>
-                        <?php echo get_template_part('partials/form-homepage'); ?>
+                        <?php echo get_template_part('partials/form-pozyczka-ratalna'); ?>
                     </div>
                 </div>
                 <div class="header-homepage__item-2 col-lg-6 px-0 order-first order-lg-last">
@@ -24,12 +24,10 @@ get_header(); ?>
     <section class="must-have">
         <div class="must-have__wrapper container">
             <div class="must-have__border">
-                <header>
-                    <h2 class="must-have__h2">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/checked.png" alt=""> 
-                        <span class="mt-1 ml-2 ml-lg-4">Żeby uzyskać pożyczkę nalęży mieć</span>
-                    </h2>
-                </header>
+                <h2 class="must-have__h2">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/checked.png" alt=""> 
+                    <span class="mt-1 ml-2 ml-lg-4">Żeby uzyskać pożyczkę nalęży mieć</span>
+                </h2>
                 <ul class="must-have__list mt-4 pl-lg-4 pr-4">
                     <li class="must-have__list-item">
                         <span class="must-have__list-style mr-3 mr-lg-4">1</span>
@@ -55,9 +53,7 @@ get_header(); ?>
     </section>
     <section class="references">
         <div class="container">
-            <header class="mb-4 mb-lg-5">
-                <h2 class="references__h2 mb-0">Zaufało nam już ponad <span class="references__big mx-2">20000</span> Polaków</h2>
-            </header>
+            <h2 class="references__h2 mb-4 mb-lg-5">Zaufało nam już ponad <span class="references__big mx-2">20000</span> Polaków</h2>
             <div class="row no-gutters">
                 <article class="col-lg-4 col-sm-6 mb-3 mb-lg-0">
                     <div class="mr-sm-2 mx-lg-2">
@@ -118,9 +114,7 @@ get_header(); ?>
     </section>
     <section class="inference">
         <div class="container">
-            <header class="mb-4 mb-lg-5">
-                <h2 class="inference__h2 mb-0">Proces wnioskowania o pożyczkę</h2>
-            </header>
+            <h2 class="inference__h2 mb-4 mb-lg-5">Proces wnioskowania o pożyczkę</h2>
             <div class="row no-gutters">
                 <div class="col-lg-3 col-md-6 mb-3 mb-lg-0">
                     <article class="inference__item mr-md-2">

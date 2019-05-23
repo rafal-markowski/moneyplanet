@@ -1,15 +1,9 @@
 .header-homepage {
     padding-top: 50px;
     margin-bottom: 65px;
-    transition: background-image 0.3s ease-out;
+    transition: $animation-image;
     @include position($p: relative, $z: 2);
     
-    &::after {
-        @include position(absolute, 0, 0, 0, 0, -1);
-        background: $white-70;
-        content: '';
-    }
-
     @include media-up(lg) {
         min-height: 670px;
         padding-top: 110px;
@@ -20,6 +14,12 @@
         }
     }
 
+    &::after {
+        @include position(absolute, 0, 0, 0, 0, -1);
+        background: $white-70;
+        content: '';
+    }
+
     &__left {
         @include media-up(lg) {
             max-width: 510px;
@@ -27,12 +27,12 @@
     }
 
     &__wrapper-form {
-        @include position($p: relative, $t: 65px);
+        @include position($p: relative, $t: 65px, $z: 2);
         padding: 1.5rem 1rem;
         color: $white;
-        transition: background-color 0.3s ease-out;
+        transition: $animation-color;
     
-        @include media-up(lg) {
+        @include media-up(sm) {
             top: 90px;
             padding: 1.75rem 2rem;
         }
@@ -61,18 +61,27 @@
     }
 
     &__tab {
-        @include position($p: absolute, $t: -49px, $l: 0, $r: 0, $z: 2);
+        @include position($p: absolute, $t: -49px, $l: 0, $r: 0, $z: -1);
         display: flex;
         width: 100%;
         padding: 0 1rem;
-        font-size: 0.875em;
 
         &-item {
+            position: relative;
             flex: 1 1;
-            padding: 0.9rem 0;
+            padding: 1rem 0 2rem;
             text-align: center;
             background: $purple;
+            color: $white;
             cursor: pointer;
+
+            @include hover($white !important, $d: none !important);
+
+            &:after {
+                @include position(absolute, 68.5%, 0, 0, 0, 1);
+                transition: $animation-color;
+                content: '';
+            }
 
             &:last-child {
                 margin-left: 0.5rem;

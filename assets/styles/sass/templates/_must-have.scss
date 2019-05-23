@@ -1,6 +1,10 @@
 .must-have {
     padding-top: 1.5rem;
     
+    @include media-up(sm) {
+        padding-top: 3rem;
+    }
+
     @include media-up(lg) {
         padding-top: 5.625rem;
     }

@@ -1,34 +1,42 @@
 (function($) {
     $(function() {
-        const $body = $('body');
-        const $firstTab = $('.header-homepage .header-homepage__tab-item:first-child');
-        const $secondTab = $('.header-homepage .header-homepage__tab-item:last-child');
+        $('body').delegate('.load','click', function(e){
+            e.preventDefault();
+            var $body = $('body');
+            var link = $(this).attr("href");
 
-        $firstTab.on('click', function() {
-            $body.addClass('first-tab');
-            $body.removeClass('second-tab');
+            if($body.hasClass('first-tab')) {
+                $body.addClass('second-tab').removeClass('first-tab');
+            } else if($body.hasClass('second-tab')) {
+                $body.addClass('first-tab').removeClass('second-tab');
+            }
+            
+            if(link!=window.location){
+                window.history.pushState({path:link},'',link);
+                // dataLayer.push({ event: 'pageview', page: { path: link} });
+            }
+
+            loadPage(link);
         });
 
-        $secondTab.on('click', function() {
-            $body.addClass('second-tab');
-            $body.removeClass('first-tab');
+        $(window).on("popstate", function(e) {
+            loadPage(e.originalEvent.state != null ? e.originalEvent.state.path : '/');
         });
 
-        //
-
-        const $r1 = $('#r1');
-        const $r1V = $('#r1-value');
-
-        const $r2 = $('#r2');
-        const $r2V = $('#r2-value');
-
-        $r1.on('input', function() {
-            $r1V.text($r1.val());
-        });
-
-        $r2.on('input', function() {
-            $r2V.text($r2.val());
-        });
-
+        function loadPage(link) {
+            $.ajax({
+                type: 'POST',
+                url: link,
+                dataType: 'html',
+                success: function (data) {
+                    var response = $(data);
+                    var form = response.filter('.header-homepage').find('.header-homepage__wrapper-form');
+                    var titlepage = response.filter('title');
+                    
+                    $('title').replaceWith(titlepage);
+                    $('.header-homepage__wrapper-form').replaceWith(form);
+                }
+            });
+		}	
     });
 })(jQuery);

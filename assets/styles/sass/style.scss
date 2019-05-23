@@ -2,6 +2,7 @@
 
 @import 'mixins/media';
 @import 'mixins/position';
+@import 'mixins/hover';
 
 @import 'global';
 @import 'templates/header-homepage';
@@ -12,3 +13,5 @@
 @import 'templates/inference';
 @import 'templates/regulations';
 @import 'templates/footer';
+@import 'templates/other-page';
+@import 'templates/paginate';

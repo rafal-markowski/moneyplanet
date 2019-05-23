@@ -1,0 +1,29 @@
+.other-page {
+    padding-top: 50px;
+
+    @include media-up(lg) {
+        padding-top: 110px;
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 0;
+        background: $purple;
+        color: $white;
+    }
+
+    &__article {
+        display: block;
+        width: 100%;
+        padding: 1.5rem;
+        border: 3px solid transparent;
+        border-radius: 10px;
+        color: $blue;
+
+        @include hover($blue) {
+            border-color: $purple;
+        }
+    }
+}
