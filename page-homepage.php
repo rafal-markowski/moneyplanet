@@ -16,7 +16,7 @@ get_header(); ?>
                     </div>
                 </div>
                 <div class="header-homepage__item-2 col-lg-6 px-0 order-first order-lg-last">
-                    <h1 class="header-homepage__h1">Pożyczki ON-LINE na raty</h1>
+                    <h1 class="header-homepage__h1">Pożyczki ON-LINE chwilówki</h1>
                 </div>
             </div>
         </div>

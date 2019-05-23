@@ -30,11 +30,14 @@
                 dataType: 'html',
                 success: function (data) {
                     var response = $(data);
-                    var form = response.filter('.header-homepage').find('.header-homepage__wrapper-form');
+                    var homepage = response.filter('.header-homepage');
+                    var form = homepage.find('.header-homepage__wrapper-form');
                     var titlepage = response.filter('title');
-                    
+                    var h1 = homepage.find('.header-homepage__h1');
+
                     $('title').replaceWith(titlepage);
                     $('.header-homepage__wrapper-form').replaceWith(form);
+                    $('.header-homepage__h1').text(h1.text());
                 }
             });
 		}	
