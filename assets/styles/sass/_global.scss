@@ -71,25 +71,9 @@ body {
 .logo, .logo-big {
     display: inline-flex;
     align-items: center;
+    color: $blue;
     
-    &, &:hover {
-        color: $blue;
-        text-decoration: none;
-    }
-
-    &::before {
-        display: inline-block;
-        background-repeat: no-repeat;
-        background-size: cover;
-        content: '';
-
-        @include media-up(lg) {
-            width: 42px;
-            height: 42px;
-            margin-right: 15px;
-            background-image: url('../images/logo.png');
-        }
-    }
+    @include hover($blue);
 
     &__span {
         font-weight: $extra-bold;
@@ -102,29 +86,8 @@ body {
     @include media-up(lg) {
         font-size: 1.3em;
     }
-    
-    &::before {
-        width: 25px;
-        height: 25px;
-        margin-right: 7px;
-        background-image: url('../images/logo-mobile.png');
-
-        @include media-up(lg) {
-            width: 42px;
-            height: 42px;
-            margin-right: 15px;
-            background-image: url('../images/logo.png');
-        }
-    }
 }
 
 .logo-big {
     font-size: 1.3em;
-
-    &::before {
-        width: 42px;
-        height: 42px;
-        margin-right: 15px;
-        background-image: url('../images/logo.png');
-    }
 }

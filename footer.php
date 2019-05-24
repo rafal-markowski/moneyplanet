@@ -5,9 +5,10 @@
     </section>
     <footer class="footer">
         <div class="footer__logo">
-            <a href="<?php echo get_site_url(); ?>" class="logo-big">
-                <span class="logo__span">Money</span>
-                Planet
+            <a href="<?php echo get_site_url(); ?>" class="logo">
+                <img class="mr-2 mr-lg-3" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="">
+                Money
+                <span class="logo__span ml-1 ml-lg-2">Planet</span>
             </a>
         </div>
         <div class="container">

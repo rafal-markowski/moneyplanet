@@ -19,8 +19,9 @@
     <nav class="top-menu">
         <div class="top-menu__wrapper container">
             <a href="<?php echo get_site_url(); ?>" class="logo">
-                <span class="logo__span">Money</span>
-                Planet
+                <img class="mr-2 mr-lg-3" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="">
+                Money
+                <span class="logo__span ml-1 ml-lg-2">Planet</span>
             </a>
             <input type="checkbox" id="checkbox-toggler">
             <div class="top-menu__dropdown">

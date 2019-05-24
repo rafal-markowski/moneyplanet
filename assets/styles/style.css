@@ -60,24 +60,11 @@ body.second-tab .form__box, body.second-tab .footer {
 .logo, .logo-big {
   display: inline-flex;
   align-items: center;
+  color: #21324c;
 }
-.logo, .logo:hover, .logo-big, .logo-big:hover {
+.logo:hover, .logo-big:hover {
   color: #21324c;
   text-decoration: none;
-}
-.logo::before, .logo-big::before {
-  display: inline-block;
-  background-repeat: no-repeat;
-  background-size: cover;
-  content: '';
-}
-@media (min-width: 992px) {
-  .logo::before, .logo-big::before {
-    width: 42px;
-    height: 42px;
-    margin-right: 15px;
-    background-image: url("../images/logo.png");
-  }
 }
 .logo__span, .logo-big__span {
   font-weight: 800;
@@ -91,29 +78,9 @@ body.second-tab .form__box, body.second-tab .footer {
     font-size: 1.3em;
   }
 }
-.logo::before {
-  width: 25px;
-  height: 25px;
-  margin-right: 7px;
-  background-image: url("../images/logo-mobile.png");
-}
-@media (min-width: 992px) {
-  .logo::before {
-    width: 42px;
-    height: 42px;
-    margin-right: 15px;
-    background-image: url("../images/logo.png");
-  }
-}
 
 .logo-big {
   font-size: 1.3em;
-}
-.logo-big::before {
-  width: 42px;
-  height: 42px;
-  margin-right: 15px;
-  background-image: url("../images/logo.png");
 }
 
 .header-homepage {
