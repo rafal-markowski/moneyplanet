@@ -8,8 +8,8 @@ body {
     }
 
     &.first-tab {
-        .header-homepage {
-            background: url('../images/header-homepage.png') no-repeat;
+        .header {
+            background: url('../images/header.png') no-repeat;
             background-size: 100% 190px;
             background-position-y: -30px;
 
@@ -30,8 +30,8 @@ body {
     }
 
     &.second-tab {
-        .header-homepage {
-            background: url('../images/header-homepage2.png') no-repeat;
+        .header {
+            background: url('../images/header2.png') no-repeat;
             background-size: 100% 190px;
             background-position-y: -30px;
 
@@ -51,8 +51,8 @@ body {
     }
 
     @include media-up(lg) {
-        &.first-tab .top-menu li:first-child,
-        &.second-tab .top-menu li:first-child {
+        &.page-template-page-homepage-php .top-menu li:first-child,
+        &.page-template-page-pozyczka-ratalna-php .top-menu li:first-child {
             margin-right: 0.85em;
     
             a {

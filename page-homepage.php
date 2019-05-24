@@ -3,26 +3,11 @@
 Template Name: Strona główna
 */
 get_header(); ?>
-    <header class="header-homepage">
-        <div class="container">
-            <div class="row">
-                <div class="header-homepage__left col-lg-6 pr-lg-0">
-                    <div class="header-homepage__wrapper-form">
-                        <div class="header-homepage__tab">
-                            <a class="header-homepage__tab-item">Pożyczka</a>
-                            <a href="<?php echo get_site_url(); ?>/pozyczka-ratalna" class="header-homepage__tab-item load">Ratalna</a>
-                        </div>
-                        <?php echo get_template_part('partials/form-homepage'); ?>
-                    </div>
-                </div>
-                <div class="header-homepage__item-2 col-lg-6 px-0 order-first order-lg-last">
-                    <h1 class="header-homepage__h1">Pożyczki na dowód i bez zaświadczeń</h1>
-                </div>
-            </div>
-        </div>
+    <header class="header">
+        <?php echo get_template_part('partials/header') ?>
     </header>
-    <section class="must-have">
-        <div class="container">
+    <div class="container">
+        <section class="must-have">
             <header>
                 <h2 class="must-have__h2">Kto otrzyma pożyczkę</h2>
             </header>
@@ -58,10 +43,8 @@ get_header(); ?>
                 <div class="must-have__img"></div>
                 <div class="must-have__color"></div>
             </div>
-        </div>
-    </section>
-    <section class="references">
-        <div class="container">
+        </section>
+        <section class="references">
             <header class="mb-4 mb-lg-5">
                 <h2 class="references__h2">Sprawdź opinie o pożyczce bez zaświadczeń!</h2>
             </header>
@@ -118,10 +101,8 @@ get_header(); ?>
                     </div>
                 </article>
             </div>
-        </div>
-    </section>
-    <section class="inference">
-        <div class="container">
+        </section>
+        <section class="inference">
             <header class="mb-4 mb-lg-5">
                 <h2 class="inference__h2 mb-0">Proces wnioskowania o pożyczkę chwilówkę</h2>
             </header>
@@ -171,6 +152,6 @@ get_header(); ?>
                     </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 <?php get_footer(); ?>

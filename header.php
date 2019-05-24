@@ -15,7 +15,7 @@
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <?php wp_head(); ?>
 </head>
-<body <?php is_page_template('page-homepage.php') ? body_class('first-tab') : is_page_template('page-pozyczka-ratalna.php') ? body_class('second-tab') : body_class(); ?>>
+<body <?php is_page_template('page-pozyczka-ratalna.php') ? body_class('second-tab') : body_class('first-tab'); ?>>
     <nav class="top-menu">
         <div class="top-menu__wrapper container">
             <a href="<?php echo get_site_url(); ?>" class="logo">

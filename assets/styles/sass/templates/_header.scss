@@ -1,4 +1,4 @@
-.header-homepage {
+.header {
     padding-top: 50px;
     margin-bottom: 65px;
     transition: $animation-image;
@@ -18,6 +18,12 @@
         @include position(absolute, 0, 0, 0, 0, -1);
         background: $white-70;
         content: '';
+    }
+
+    &--hidden {
+        @include media-up(lg) {
+            display: none;
+        }
     }
 
     &__left {

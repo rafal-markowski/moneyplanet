@@ -3,20 +3,14 @@
 Template Name: Strona główna - pożyczka ratalna
 */
 get_header(); ?>
-    <header class="header-homepage">
+    <header class="header">
         <div class="container">
             <div class="row">
-                <div class="header-homepage__left col-lg-6 pr-lg-0">
-                    <div class="header-homepage__wrapper-form">
-                        <div class="header-homepage__tab">
-                            <a href="<?php echo get_site_url(); ?>" class="header-homepage__tab-item load">Pożyczka</a>
-                            <a class="header-homepage__tab-item">Ratalna</a>
-                        </div>
-                        <?php echo get_template_part('partials/form-pozyczka-ratalna'); ?>
-                    </div>
+                <div class="header__left col-lg-6 pr-lg-0">
+                    <?php echo get_template_part('partials/form-pozyczka-ratalna'); ?>
                 </div>
-                <div class="header-homepage__item-2 col-lg-6 px-0 order-first order-lg-last">
-                    <h1 class="header-homepage__h1">Pożyczki przez internet na raty bez zaświadczeń</h1>
+                <div class="header__item-2 col-lg-6 px-0 order-first order-lg-last">
+                    <h1 class="header__h1">Pożyczki przez internet na raty bez zaświadczeń</h1>
                 </div>
             </div>
         </div>
