@@ -3,10 +3,10 @@
         <label class="form__label" for="amount">Ile chcesz pożyczyć?</label>
         <div class="form__range-box">
             <div>
-                <input class="form__range" type="range" min="100" max="10000" value="5000" step="100" id="amount" name="amount"> 
+                <input class="form__range" type="range" min="500" max="5000" value="2500" step="50" id="amount" name="amount"> 
             </div>
             <div class="form__value">
-                <span id="calc-amount">5000</span>
+                <span id="calc-amount">2500</span>
                 zł
             </div>
         </div>
@@ -15,11 +15,11 @@
         <label class="form__label" for="period">Okres pożyczki?</label>
         <div class="form__range-box">
             <div>
-                <input class="form__range" type="range" min="1" max="72" value="36" step="1" id="period" name="period"> 
+                <input class="form__range" type="range" min="7" max="30" value="15" step="1" id="period" name="period"> 
             </div>
             <div class="form__value">
-                <span id="calc-period">36</span>
-                mieś
+                <span id="calc-period">15</span>
+                dni
             </div>
         </div>
     </div>
@@ -30,16 +30,16 @@
         </div>
         <div class="form__group">
             <span class="form__span">Odsetki od kwoty pożyczki</span> 
-            <span class="form__value-2" id="calc-int">162,56</span>
+            <span class="form__value-2" id="calc-int">167.50</span>
             zł
         </div>
         <div class="form__group">
             <span class="form__span">RRSO</span> 
-            <span class="form__value-2" id="calc-apr">57,20</span>
+            <span class="form__value-2" id="calc-apr">128.29</span>
         </div>
         <div class="mb-4">
             <span class="form__span">Całkowita kwota do spłaty </span>
-            <span class="form__value-2" id="calc-tot">3394,54</span>
+            <span class="form__value-2" id="calc-tot">4132.50</span>
             zł
         </div>
         <button class="mb-4 form__submit">ZŁÓŻ WNIOSEK</button>

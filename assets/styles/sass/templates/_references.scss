@@ -25,30 +25,29 @@
         color: $green;
     }
 
-    &__img {
-        height: 140px;
-        background: url('../images/references-mobile.png') no-repeat center;
-        background-size: 100% 140px;
+    &__mobile-img {
+        width: 100%;
+        min-height: 150px;
 
-        @include media-retina {
-            background-image: url('../images/references-mobile.png');
+        @include media-up(lg) {
+            display: none;
         }
+    }
 
-        @include media-up(md) {
-            height: 200px;
-            background-image: url('../images/references.png');
-            background-size: 104% 200px;
-
-            @include media-retina {
-                background-image: url('../images/references-2x.png');
-            }
+    &__img {
+        width: 100%;
+        max-height: 220px;
+        
+        @include media-down(lg) {
+            display: none;
         }
     }
 
     &__content {
         position: relative;
         background: $green-3;
-
+        flex: 1 1;
+        
         &::after, &::before {
             @include position($p:absolute, $t: -15px, $z: 2);
             width: 8px;

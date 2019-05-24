@@ -4,6 +4,8 @@
             <h1><?php single_post_title(); ?></h1>
         </header>
         <div class="container mt-4">
+            <p>Tutaj znajdziesz porady pożyczkowe ekspertów MoneyPlanet. Jeśli nie wiesz, jak wziąć pożyczkę albo jak chcesz poznać pożyteczne porady pożyczkowe, to trafiłeś w dobre miejsce.</p>
+            <p>MoneyPlanet dba o edukację finansową swoich klientów, dlatego regularnie publikuje ważne informacje na temat pożyczania oraz pomoce rady, dzięki którym pożyczanie staje się przyjemnością, a nie zagrożeniem spiralą zadłużenia.</p>
             <div class="row no-gutters">
                 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                     <article class="col-md-6">

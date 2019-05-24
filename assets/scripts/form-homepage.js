@@ -32,12 +32,16 @@
                     var response = $(data);
                     var homepage = response.filter('.header-homepage');
                     var form = homepage.find('.header-homepage__wrapper-form');
+                    var homepageH1 = homepage.find('.header-homepage__h1');
+                    var references = response.filter('.references');
+                    var inferenceH1 = response.filter('.inference').find('h2');
                     var titlepage = response.filter('title');
-                    var h1 = homepage.find('.header-homepage__h1');
 
                     $('title').replaceWith(titlepage);
                     $('.header-homepage__wrapper-form').replaceWith(form);
-                    $('.header-homepage__h1').text(h1.text());
+                    $('.header-homepage__h1').text(homepageH1.text());
+                    $('.references').replaceWith(references);
+                    $('.inference__h2').text(inferenceH1.text());
                 }
             });
 		}	

@@ -12,13 +12,8 @@ body {
             background: url('../images/header-homepage.png') no-repeat;
             background-size: 100% 190px;
             background-position-y: -30px;
-    
-            @include media-retina {
-                background-image: url('../images/header-homepage-2x.png');
-            }
 
             @include media-up(lg) {
-                background-repeat: no-repeat;
                 background-position: center;
                 background-size: cover;
             }
@@ -39,13 +34,8 @@ body {
             background: url('../images/header-homepage2.png') no-repeat;
             background-size: 100% 190px;
             background-position-y: -30px;
-    
-            @include media-retina {
-                background-image: url('../images/header-homepage2-2x.png');
-            }
 
             @include media-up(lg) {
-                background-repeat: no-repeat;
                 background-position: center;
                 background-size: cover;
             }

@@ -1,15 +1,15 @@
 .must-have {
-    padding-top: 1.5rem;
+    padding-top: 2rem;
     
     @include media-up(sm) {
         padding-top: 3rem;
     }
 
     @include media-up(lg) {
-        padding-top: 5.625rem;
+        padding-top: 5rem;
     }
 
-    &__h2 {
+    &__h3 {
         display: flex;
         align-items: center;
         font-size: 0.875em;
@@ -100,5 +100,17 @@
 
     &__wrapper {
         position: relative;
+    }
+
+    &__h2 {
+        margin-bottom: 1.25rem;
+        font-size: 1em;
+        text-align: center;
+        font-weight: $bold;
+
+        @include media-up(lg) {
+            font-size: 2em;
+            margin-bottom: 5rem;
+        }
     }
 } 
